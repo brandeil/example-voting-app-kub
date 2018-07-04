@@ -7,6 +7,7 @@
 
 #
 3. Create services - CusterIP - Internal
-
+redis, postgres containers
 #
 4. Create services - LoadBalancer - External
+voting-app-web, result-app-web
