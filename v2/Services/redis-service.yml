@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  labels:
+    name: redis-service
+    app: demo-voting-app
+spec:
+  ports:
+  - port: 6379
+    targetPort: 6379
+  selector:
+    name: redis-pod
+    app: demo-voting-app  
+
+# the selector will link the service to the pods matched via labels in the pod specification
+
+# The service should be named based on what the calling app is looking for
+# ie db, redis, etc
+
+# Service ports
+# port = the port on the service
+# targetPort = the port on the pod
+# NodePort = the port to be used externally in the range 32000-32767
