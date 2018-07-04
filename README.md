@@ -1,6 +1,5 @@
 # example-voting-app-kub
 
-#
 1. Create a Google Container engine environment
 
 #
