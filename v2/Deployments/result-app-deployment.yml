@@ -14,6 +14,7 @@ spec:
     metadata:
       name: result-app
       labels:        
+        name: result-app      
         app: demo-voting-app
     spec:
       containers:
